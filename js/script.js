@@ -1,10 +1,10 @@
 $(function() {
   const url = "https://restcountries.eu/rest/v2/name/";
-  const countriesList = $("#countries");
+  const $countriesList = $("#countries");
 
   $("#search").click(searchCountries);
   $("#country-name").keypress(function(e) {
-    if (e.which == 13) {
+    if (e.which === 13) {
       searchCountries();
     }
   });
@@ -18,10 +18,10 @@ $(function() {
   }
 
   function showCountriesList(resp) {
-    countriesList.empty();
+    $countriesList.empty();
     const $listItem = $("<li>")
       .addClass("country")
-      .appendTo(countriesList);
+      .appendTo($countriesList);
     const $colOne = $("<div>")
       .addClass("col-one")
       .appendTo($listItem);
