@@ -9,7 +9,6 @@ $white: white;
 
 * {
   box-sizing: border-box;
-  //border: 1px solid red;
 }
 
 body {
@@ -30,14 +29,21 @@ h2 {
 
 p {
   color: $white;
+  padding: 10px;
+  height: 50px;
 }
 
-#countries {
+figure {
+  width: 86px;
+  height: 50px;
+}
+
+.countries-table {
   text-align: center;
   padding-left: 0;
 }
 
-#search {
+.search-btn {
   color: $white;
   width: 140px;
   height: 40px;
@@ -56,19 +62,9 @@ p {
   justify-content: center;
 }
 
-figure {
-  width: 86px;
-  height: 50px;
-}
-
 .col-one,
 .col-two {
   background-color: rgba($black, 0.6);
-}
-
-p {
-  padding: 10px;
-  height: 50px;
 }
 
 .flag {
