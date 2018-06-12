@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|Raleway");
 * { box-sizing: border-box; }
 
-body { font-family: "Raleway"; margin: 0 auto; text-align: center; background: url("/images/globe.jpeg"); background-position: center; background-size: cover; background-repeat: no-repeat; height: 100vh; }
+body { font-family: "Raleway"; margin: 0 auto; text-align: center; background: url("https://github.com/swirek-marcin/zadanie-12-6/blob/master/images/globe.jpeg?raw=true"); background-position: center; background-size: cover; background-repeat: no-repeat; height: 100vh; }
 
 h1, h2 { text-shadow: 0 0 4px black; }
 
