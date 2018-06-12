@@ -25,7 +25,7 @@ $(function() {
     const $listItem = $("<li>")
       .addClass("country")
 
-      .appendTo($wrapper);
+      .appendTo($wrapper)
 
     const $colOne = $("<div>")
       .addClass("col-one")
