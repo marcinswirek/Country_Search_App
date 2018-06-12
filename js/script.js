@@ -19,14 +19,10 @@ $(function() {
 
   function showCountriesList(resp) {
     $countriesList.empty();
-
     let $wrapper = $("<div>");
-
     const $listItem = $("<li>")
       .addClass("country")
-
-      .appendTo($wrapper)
-
+      .appendTo($wrapper);
     const $colOne = $("<div>")
       .addClass("col-one")
       .appendTo($listItem);
