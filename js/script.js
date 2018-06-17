@@ -1,6 +1,6 @@
 $(function() {
-  const url = "https://restcountries.eu/rest/v2/name/";
-  const $countriesList = $("#countries");
+  var url = "https://restcountries.eu/rest/v2/name/";
+  var $countriesList = $("#countries");
 
   $("#search").click(searchCountries);
   $("#country-name").keypress(function(e) {
@@ -10,11 +10,13 @@ $(function() {
   });
 
   function searchCountries() {
-    let countryName = $("#country-name").val();
-    if (!countryName.length) {
-      countryName = "Poland";
-    }
-    $.getJSON(url + countryName, showCountriesList);
+    var countryName = $("#country-name").val();
+    if (!countryName.length) countryName = "Poland";
+    $.ajax({
+      url: url + countryName,
+      method: "GET",
+      success: showCountriesList
+    });
   }
 
   function showCountriesList(resp) {
