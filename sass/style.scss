@@ -9,14 +9,14 @@ $white: white;
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 body {
   font-family: "Raleway";
   margin: 0 auto;
   text-align: center;
-  background: url("/images/globe.jpeg");
+  background: url("/images/globe.jpeg") fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,5 +74,6 @@ figure {
 }
 
 .figure-flag {
-    overflow: hidden;
+  overflow: hidden;
+  margin: 0 auto;
 }
