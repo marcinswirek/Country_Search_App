@@ -52,13 +52,10 @@ $(function() {
       $("<p>")
         .text(item.name)
         .appendTo($colTwo);
-      $("<figure>")
-        .addClass("figure-flag")
-        .appendTo($colTwo);
       $("<img>")
         .addClass("flag")
         .attr("src", item.flag)
-        .appendTo(".figure-flag");
+        .appendTo($colTwo);
       $("<p>")
         .text(item.population)
         .appendTo($colTwo);
