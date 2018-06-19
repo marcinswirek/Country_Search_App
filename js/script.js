@@ -22,8 +22,7 @@ $(function() {
   function showCountriesList(resp) {
     $countriesList.empty();
     let $wrapper = $("<div>")
-      .addClass("wrapper")
-      .appendTo($countriesList);
+      .addClass("wrapper");
     const $listItem = $("<li>")
       .addClass("country")
       .appendTo($wrapper);
